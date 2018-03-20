@@ -3,7 +3,7 @@ library(shiny)
 library(diagmeta)
 library(lme4)
 library(shinythemes)
-library(gridExtra)
+
 ## Get the value of the dataset that is selected by user from the list of datasets
 shinyServer(function(input, output) {
   Data1 <- reactive({
@@ -50,7 +50,7 @@ shinyServer(function(input, output) {
     filename =  function() {
       paste("diagmeta", input$tplot, sep=".")
     },
-    # content is a function with argument file. content writes the plot to the device
+
     content = function(file) {
       if(input$tplot == "png")
         png(file) # open the png device
