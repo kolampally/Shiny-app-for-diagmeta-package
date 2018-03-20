@@ -1,13 +1,11 @@
 
 
-#### ShinyThemes Demo Code ####
 library(shiny)
 library(shinythemes)
 
 
 shinyUI(fluidPage(
-  theme=shinytheme("cerulean"),# returns URL of a shiny theme
-
+  theme=shinytheme("cerulean"),
   
   navbarPage(
     title="Meta-Analysis of Diagnostic Accuracy Studies with Several Cutpoints",
